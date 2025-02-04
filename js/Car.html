@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <style>
+        #Car
+        {
+            width:auto;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 80px;
+        }
+    </style>
+    <script>
+        var a;
+        b=document.getElementById("Car").style.left.value;
+        c=document.getElementById("Car").style.top.value;
+        function moveCar()
+        {
+            a=event.keyCode;
+            if(a==37)
+            {
+                b=b-10;
+                document.getElementById("Car").style.left=b+"px";
+            }
+            else if(a==38)
+            {
+                c=c-10;
+                document.getElementById("Car").style.top=c+"px";
+            }
+            else if(a==39)
+            {
+                b=b+10;
+                document.getElementById("Car").style.left=b+"px";
+            }
+            else if(a==40)
+            {
+                c=c+10;
+                document.getElementById("Car").style.top=c+"px";
+            }
+            
+        }
+    </script>
+    </head>
+    <body bgcolor="yellow">
+        <input type="text" onkeydown="moveCar();">
+        <div id="Car">
+          <img src="./Car.png">
+        </div>
+    </body>
+</html>

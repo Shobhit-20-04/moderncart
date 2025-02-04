@@ -1,0 +1,44 @@
+<html>
+    <style>
+        #main
+        {
+            height: 200px;
+            width: 600px;
+            display: inline-block;
+            line-height: 30px;
+        }
+    </style>
+    <script>
+        dvItem=document.getElementById("Item");
+        dvQuantity=document.getElementById("Quantity");
+        dvRate=document.getElementById("Rate");
+        prnt=dv.parentNode;
+        newdv=document.createElement("div");
+        newdv.innerHTML="dvItem,dvRate,dvQuantity,dvQuantity*dvRate";
+        prnt.appendChild(newdv);
+        </script>
+    <body>
+        <div id="main">
+        <div id="Item">
+            Choose Product
+            <select name="cmbProd" size="4">
+                <option value="1">Kaju</option>
+                <option value="2">Kishmish</option>
+                <option value="3">Badam</option>
+                <option value="4">Pista</option>
+            </select>
+        </div>
+        <div id="Rate">
+            Rate
+            <input type="text">
+        </div>
+        <div id="Quantity">
+            Quantity
+            <input type="text">
+        </div>
+        <div id="status">
+            <a href="#">Add</a>
+        </div>
+        </div>
+    </body>
+</html>
