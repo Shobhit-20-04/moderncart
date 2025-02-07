@@ -19,9 +19,9 @@ ModernCart is a PHP-based e-commerce shopping cart system.
    ```sh
    git clone https://github.com/Shobhit-20-04/moderncart.git
 2. Move the project folder to your WAMP server's www directory:
-
+```sh
 C:\wamp64\www\moderncart
-
+```
 3. Start WAMP Server and ensure Apache and MySQL are running.
 
 4. Open phpMyAdmin (http://localhost/phpmyadmin/) and create a new database named moderncart.
